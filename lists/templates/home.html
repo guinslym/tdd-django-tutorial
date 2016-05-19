@@ -3,9 +3,8 @@
   <body>
     <h1>To-Do liss yay!</h1>
     <form method="post">
-      {% csrf_token %}
       <input id="id_new_item" name="item_text" type="text" placeholder="Enter a to-do item"/>
-      <button type="button" name="button">Submit</button>
+      {% csrf_token %}
     </form>
     <table id="id_list_table">
       <tr><td>{{ new_item_text }}</td></tr>
